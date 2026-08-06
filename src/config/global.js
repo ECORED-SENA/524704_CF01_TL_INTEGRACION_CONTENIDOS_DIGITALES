@@ -1,6 +1,6 @@
 export default {
   global: {
-    Name: 'Contenido digital prueba',
+    Name: 'Contenido digital prueba 2',
     Description:
       'Los fundamentos del diseño gráfico y digital, del lenguaje audiovisual, las tipologías multimedia, la estrategia digital, entre otros, son elementos fundamentales para la comunicación visual de las ideas en entornos digitales. Más allá de un producto final, lo importante es entender el proceso de creación y los detalles que conforman cada composición, los cuales pueden aplicarse a casi cualquier tipo de proyecto.',
     imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
