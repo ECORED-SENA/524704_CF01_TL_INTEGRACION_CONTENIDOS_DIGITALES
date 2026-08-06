@@ -7,7 +7,7 @@
           span
             i.fas.fa-info
         h1 Introducción
-      p.mb-5(data-aos="fade-right") El programa de formación tecnológica en Integración de Contenidos Digitales pretende otorgar al aprendiz SENA los conocimientos necesarios para desarrollar estrategias de planeación y producción de contenidos digitales y multimedia que las #[i mipymes] del país requieren en el contexto de la cuarta revolución industrial, tal como se puede apreciar en el siguiente video.
+      p.mb-5(data-aos="fade-right") El programa de formación Técnico en Integración de Contenidos Digitales pretende otorgar al aprendiz SENA los conocimientos necesarios para desarrollar estrategias de planeación y producción de contenidos digitales y multimedia que las #[i mipymes] del país requieren en el contexto de la cuarta revolución industrial, tal como se puede apreciar en el siguiente video.
       figure(data-aos="fade-left").mb-5
         .video.mb-1
           iframe(width="560" height="315" src="https://www.youtube.com/embed/5HV7iGgE5QQ" title="Contenido digital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)

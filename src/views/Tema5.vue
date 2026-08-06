@@ -51,7 +51,7 @@
         .col-xl
           .style___box_3.fit___box_3_3.mb-3(data-aos="zoom-in")
             p.mb-0 De esta manera, las organizaciones logran una segmentación tan precisa de sus mercados que llegan a identificar los medios sociales utilizados en cada país. Los profesionales del #[i marketing] digital consideran que, si un producto o servicio no se encuentra en Internet, simplemente no existe.
-          p.mb-0 Las redes sociales como #[i TikTok, Kwai, Facebook, Twitter, LinkedIn e Instagram] constituyen nuevas formas de llegar al cliente. Aunque muchas personas consideran que estos son los principales medios para comercializar productos o servicios, también resulta necesario contar con un #[b sitio #[i web]] y con el apoyo del #[b #[i e-mail marketing]].
+          p.mb-0 Las redes sociales como TikTok, Kwai, Facebook, Twitter, LinkedIn e Instagram constituyen nuevas formas de llegar al cliente. Aunque muchas personas consideran que estos son los principales medios para comercializar productos o servicios, también resulta necesario contar con un #[b sitio web] y con el apoyo del #[b #[i e-mail marketing]].
         .col-xl-auto(data-aos="fade-left")
           figure.d-none.d-xl-block
             img(src='@/assets/curso/temas/img111.png', alt='').m-auto
@@ -101,7 +101,7 @@
               .row.h-100.justify-content-center.align-items-center
                 .col-xl-6.mb-4
                   h4 Análisis de la competencia
-                  p.mb-0 Es un análisis de todas las empresas o personas que hacen ruido en la #[i web], posicionándose con productos o servicios iguales o sustitutivos de los que se desean vender.
+                  p.mb-0 Es un análisis de todas las empresas o personas que hacen ruido en la web, posicionándose con productos o servicios iguales o sustitutivos de los que se desean vender.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/img117.png', alt='' style="max-width: 500px").m-auto
@@ -111,26 +111,26 @@
           .col-xl-auto
             figure(data-aos="fade-right").d-none.d-xl-block
               img(src="@/assets/curso/temas/img118.png", alt="" ).m-auto
-          .col-xl
-            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")(data-aos="fade-left")
+          .col-xl(data-aos="fade-left")
+            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")
               .row(titulo="Objetivos del negocio").ajuste-cajaAcordion
                 p.mb-3 Se fijan los objetivos que se desean alcanzar para elaborar el Plan Estratégico de #[i Marketing] con base en ellos.
               .row(titulo="Estrategias en redes sociales").ajuste-cajaAcordion
                 p.mb-3 Análisis de las redes sociales más efectivas para el producto o servicio, así como del lenguaje, el estilo de comunicación y la atención a los seguidores.
               .row(titulo="Estrategia SEO").ajuste-cajaAcordion
-                p.mb-3 Estudio de palabras clave para posicionar la página #[i web] en Google y de los contenidos necesarios para mantener un posicionamiento óptimo y lograr conversiones, considerando otros factores del posicionamiento orgánico.
+                p.mb-3 Estudio de palabras clave para posicionar la página web en Google y de los contenidos necesarios para mantener un posicionamiento óptimo y lograr conversiones, considerando otros factores del posicionamiento orgánico.
               .row(titulo="Estrategias en publicidad digital").ajuste-cajaAcordion
                 p.mb-3 Análisis de medios publicitarios digitales en los que se paga por visita, incluyendo opciones como microsegmentación de anuncios y la gestión flexible de campañas.
               .row(titulo="Estrategias en <i>Email Marketing</i>").ajuste-cajaAcordion
                 p.mb-3 Estrategias orientadas al uso efectivo del correo electrónico para la captación de clientes y la conversión de ventas.
               .row(titulo="Estrategia <i>web</i>").ajuste-cajaAcordion
-                p.mb-3 Análisis de los elementos fundamentales de la página #[i web] para alcanzar los objetivos, considerando accesibilidad, identidad, navegación, contenidos y usabilidad.
+                p.mb-3 Análisis de los elementos fundamentales de la página web para alcanzar los objetivos, considerando accesibilidad, identidad, navegación, contenidos y usabilidad.
       .bg--img_03.mb-5
         .row.h-100.align-items-center
-          .col-xl
-            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")(data-aos="fade-right")
+          .col-xl(data-aos="fade-right")
+            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")
               .row(titulo="Estrategias de <i>Inbound Marketing</i>").ajuste-cajaAcordion
-                p.mb-3 Atracción de potenciales clientes mediante contenidos digitales de calidad, con el fin de convertirlos progresivamente en visitantes, leads, clientes y promotores de la marca.
+                p.mb-3 Atracción de potenciales clientes mediante contenidos digitales de calidad, con el fin de convertirlos progresivamente en visitantes, #[i leads], clientes y promotores de la marca.
               .row(titulo="Estrategias de <i>influencers</i>").ajuste-cajaAcordion
                 p.mb-3 Análisis y colaboración con personas influyentes en el entorno digital, como #[i bloggers] o #[i youtubers], para lograr visibilidad.
               .row(titulo="Seguimiento de la reputación <i>online</i>").ajuste-cajaAcordion
@@ -140,7 +140,7 @@
               .row(titulo="Métodos de pago recomendados").ajuste-cajaAcordion
                 p.mb-3 Análisis de las formas más convenientes y seguras de pago en el caso de proyectos de #[i e-commerce], según el público objetivo y el tipo de negocio.
               .row(titulo="Analítica y medición de resultados").ajuste-cajaAcordion
-                p.mb-3 Uso de herramientas de analítica para conocer la interacción de los usuarios y mejorar continuamente la aplicación y la página #[i web].
+                p.mb-3 Uso de herramientas de analítica para conocer la interacción de los usuarios y mejorar continuamente la aplicación y la página web.
           .col-xl-auto
             figure(data-aos="fade-left").d-none.d-xl-block
               img(src="@/assets/curso/temas/img119.png", alt="" ).m-auto
@@ -178,13 +178,42 @@ export default {
   data: () => ({
     // variables de vue
   }),
+  watch: {
+    // Escucha el cambio de sección desde el menú lateral
+    '$route.hash'() {
+      this.scrollToElement()
+    },
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
+    this.scrollToElement()
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    scrollToElement() {
+      this.$nextTick(() => {
+        this.$aosRefresh()
+        // 500ms da tiempo suficiente a que la animación de cierre del menú lateral
+        // termine y libere el ancho/alto real del contenedor
+        setTimeout(() => {
+          const hash = this.$route.hash || window.location.hash
+          if (!hash) return
+          const element = document.querySelector(hash)
+          if (element) {
+            // Altura de la barra superior fija del SENA
+            const headerOffset = 100
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            })
+          }
+        }, 500)
+      })
+    },
   },
 }
 </script>

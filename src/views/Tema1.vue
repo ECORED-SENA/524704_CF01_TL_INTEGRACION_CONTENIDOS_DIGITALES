@@ -11,7 +11,7 @@
         .bloque-texto-g__img(
           :style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/img1.jpg')})` }")
         .bloque-texto-g__texto.p-4
-          p.mb-0 El diseño surge como una manera de organizar las ideas para plasmarlas en una comunicación de tipo visual. Puede aplicarse en múltiples áreas, entre las que se encuentran el diseño gráfico, de interiores, arquitectónico, industrial, de modas, editorial, publicitario, artístico, diseño digital y diseño #[i web], entre otros. Debido a su relación con tantas áreas, el diseño puede definirse como #[b toda acción creadora que persigue una finalidad].
+          p.mb-0 El diseño surge como una manera de organizar las ideas para plasmarlas en una comunicación de tipo visual. Puede aplicarse en múltiples áreas, entre las que se encuentran el diseño gráfico, de interiores, arquitectónico, industrial, de modas, editorial, publicitario, artístico, diseño digital y diseño web, entre otros. Debido a su relación con tantas áreas, el diseño puede definirse como #[b toda acción creadora que persigue una finalidad].
       <!------------------------------------------ SUBTEMA 1 ------------------------------------------>
       Separador
       #t_1_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
@@ -66,14 +66,14 @@
               .row.h-100.justify-content-center.align-items-center
                 .col-xl-6.mb-4.mb-md-0
                   h4 Bauhaus (1919 - 1933)
-                  p.mb-0 En 1919, #[b Walter Gropius] creó la escuela #[b #[i Bauhaus]], la cual se convirtió en el motor y modelo ejemplar de la reforma de la formación artística antiacadémica de la República de Weimar (1918 - 1933). La #[i Bauhaus] combinó diseño, arte y arquitectura, y estudió la forma, el color, los materiales, la composición y el espacio, bajo la influencia del constructivismo. La escuela cerró sus puertas en Berlín en 1933 (p. 15).
+                  p.mb-0 En 1919, #[b Walter Gropius] creó la escuela #[b Bauhaus], la cual se convirtió en el motor y modelo ejemplar de la reforma de la formación artística antiacadémica de la República de Weimar (1918 - 1933). La Bauhaus combinó diseño, arte y arquitectura, y estudió la forma, el color, los materiales, la composición y el espacio, bajo la influencia del constructivismo. La escuela cerró sus puertas en Berlín en 1933 (p. 15).
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/img8.png', alt='' style="max-width: 500px").m-auto
               .row.h-100.justify-content-center.align-items-center
                 .col-xl-6.mb-4.mb-md-0
                   h4 Art déco (1925)
-                  p.mb-0 Mientras en Alemania se desarrollaba la #[i Bauhaus], en Francia surgió el movimiento Art déco, el cual se dio a conocer en la Exposición Internacional de las Artes Decorativas e Industriales Modernas de 1925.
+                  p.mb-0 Mientras en Alemania se desarrollaba la Bauhaus, en Francia surgió el movimiento Art déco, el cual se dio a conocer en la Exposición Internacional de las Artes Decorativas e Industriales Modernas de 1925.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/img9.png', alt='' style="max-width: 500px").m-auto
@@ -87,7 +87,7 @@
               .row.h-100.justify-content-center.align-items-center
                 .col-xl-6.mb-4.mb-md-0
                   h4 Diseño gráfico contemporáneo
-                  p.mb-0 En la actualidad, el diseño gráfico forma parte de la vida cotidiana y está presente en todas las áreas de la comunicación. Con la aparición de Internet en la década de 1980, su evolución se aceleró gracias al uso de computadores y programas informáticos gráficos, los cuales transformaron el papel en pantalla y ofrecieron a los diseñadores nuevas posibilidades de experimentación con el texto y la imagen. Este proceso permitió el surgimiento de nuevas corrientes y especialidades, como la creación y el diseño de páginas #[i web].
+                  p.mb-0 En la actualidad, el diseño gráfico forma parte de la vida cotidiana y está presente en todas las áreas de la comunicación. Con la aparición de Internet en la década de 1980, su evolución se aceleró gracias al uso de computadores y programas informáticos gráficos, los cuales transformaron el papel en pantalla y ofrecieron a los diseñadores nuevas posibilidades de experimentación con el texto y la imagen. Este proceso permitió el surgimiento de nuevas corrientes y especialidades, como la creación y el diseño de páginas web.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/img11.png', alt='' style="max-width: 500px").m-auto
@@ -358,19 +358,18 @@
         h4.mb-0 Uso del color en el diseño
       p.mb-5(data-aos="fade-left") Ahora bien, el uso del color en el diseño se fundamenta en la selección adecuada de los colores con el propósito de generar en el receptor un efecto determinado. Este proceso contempla diversos aspectos relacionados con el significado simbólico y emocional de cada color, los cuales se desarrollan a continuación.
       .color___box_2
-        .px-5
-          .row.justify-content-center.mb-5
+        .px-5.pb-5
+          .row.justify-content-center
             .col-xl-10
               .titulo-sexto.color-acento-contenido.mb-2(data-aos="fade-right")
                 h5 Tabla 3.
-                span Tiempos de escaldado de verduras
+                span Psicología del color
               .tabla-a(data-aos="zoom-in")
                 table
-                  caption Referencia Tabla - Norma APA.
                   thead
                     tr
                       th.ajuste-border-tabla.texto-left Color
-                      th.texto-left Tiempo de escaldado en agua hirviendo
+                      th.texto-left Descripción
                   tbody
                     tr
                       td.ajuste-border-tabla.texto-left Rojo
@@ -690,7 +689,7 @@
                       i.fas.fa-arrow-alt-circle-right
                     | #[b Tipografías de fantasía o decorativas], que reinterpretan elementos formales fuera de toda norma, incorporando elementos variables de diversa naturaleza.
               .row(titulo="Tipografía digital").ajuste-cajaAcordion
-                p.mb-5  Gracias a los avances tecnológicos, se ha pasado de la fotocomposición a la tipografía digital, diseñada a partir de vectores para su visualización en cualquier tipo de pantalla o dispositivo móvil. Los formatos más tradicionales utilizados en los sistemas operativos son: #[i TrueType Font (.ttf), OpenType Font (.otf), Embedded OpenType (.eot) y web Open Font Format (.woff y .woff2)]. Las tipografías #[i web] son una función del CSS (lenguaje para la composición y estructuración de páginas #[i web HTML o XML]) que permite especificar los archivos tipográficos que se descargan junto con un sitio #[i web] a medida que el usuario accede a él. Las tipografías #[i web] pueden crearse o seleccionarse a partir de catálogos existentes. Entre las herramientas para creación se encuentra #[i MyScriptFont], y también es posible diseñarlas en #[i Adobe Illustrator]. Para la selección de tipografías existentes se dispone de servicios como #[i Google Fonts, Typekit de Adobe, Typography y Creative Market], donde se ofrecen tipografías gratuitas y con licencias de pago.
+                p.mb-5  Gracias a los avances tecnológicos, se ha pasado de la fotocomposición a la tipografía digital, diseñada a partir de vectores para su visualización en cualquier tipo de pantalla o dispositivo móvil. Los formatos más tradicionales utilizados en los sistemas operativos son: #[i TrueType Font (.ttf), OpenType Font (.otf), Embedded OpenType (.eot)] y web #[i Open Font Format (.woff y .woff2)]. Las tipografías web son una función del CSS (lenguaje para la composición y estructuración de páginas web HTML o XML) que permite especificar los archivos tipográficos que se descargan junto con un sitio web a medida que el usuario accede a él. Las tipografías web pueden crearse o seleccionarse a partir de catálogos existentes. Entre las herramientas para creación se encuentra MyScriptFont, y también es posible diseñarlas en Adobe Illustrator. Para la selección de tipografías existentes se dispone de servicios como Google Fonts, Typekit de Adobe, Typography y Creative Market, donde se ofrecen tipografías gratuitas y con licencias de pago.
 
 </template>
 <script>
@@ -699,13 +698,42 @@ export default {
   data: () => ({
     // variables de vue
   }),
+  watch: {
+    // Escucha el cambio de sección desde el menú lateral
+    '$route.hash'() {
+      this.scrollToElement()
+    },
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
+    this.scrollToElement()
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    scrollToElement() {
+      this.$nextTick(() => {
+        this.$aosRefresh()
+        // 500ms da tiempo suficiente a que la animación de cierre del menú lateral
+        // termine y libere el ancho/alto real del contenedor
+        setTimeout(() => {
+          const hash = this.$route.hash || window.location.hash
+          if (!hash) return
+          const element = document.querySelector(hash)
+          if (element) {
+            // Altura de la barra superior fija del SENA
+            const headerOffset = 100
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            })
+          }
+        }, 500)
+      })
+    },
   },
 }
 </script>

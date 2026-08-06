@@ -48,21 +48,53 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo: 'Diseño digital',
+            titulo: 'Fundamentos del diseño',
             hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Elementos del diseño gráfico',
+            hash: 't_1_3',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Lenguaje audiovisual',
+        titulo: 'Diseño digital',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.1',
+            titulo: 'El diseño web',
+            hash: 't_2_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.2',
+            titulo: 'Principios del diseño web',
+            hash: 't_2_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.3',
+            titulo: 'Enfoques de la usabilidad',
+            hash: 't_2_3',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.4',
+            titulo: 'Arquitectura web',
+            hash: 't_2_4',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Guion audiovisual',
+        titulo: 'Lenguaje audiovisual',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -76,8 +108,16 @@ export default {
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Dirección de arte',
+        titulo: 'Guion audiovisual',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.1',
+            titulo: '<i>Storyboard</i> o guion gráfico',
+            hash: 't_4_1',
+          },
+        ],
       },
       {
         nombreRuta: 'tema5',
@@ -88,14 +128,20 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '5.1',
-            titulo: '<i>Marketing</i> digital',
+            titulo: 'Estrategia digital',
             hash: 't_5_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '5.2',
-            titulo: 'Plan de medios digitales',
+            titulo: '<i>Marketing</i> digital',
             hash: 't_5_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '5.3',
+            titulo: 'Plan de medios digitales',
+            hash: 't_5_3',
           },
         ],
       },

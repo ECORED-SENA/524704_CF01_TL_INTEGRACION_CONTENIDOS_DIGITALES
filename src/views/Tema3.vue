@@ -51,7 +51,7 @@
       figure(data-aos="zoom-in").mb-5
         .video.mb-1
           iframe(width="560" height="315" src="https://www.youtube.com/embed/y6MiB-jb2eM" title="Contenido digital: lenguaje audiovisual" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-        figcaption(data-aos="zoom-in") #[b Video]: contenido digital lenguaje audiovisual.
+        figcaption(data-aos="zoom-in") #[b Video]: contenido digital: lenguaje audiovisual.
       p.mb-5(data-aos="fade-right") Cuando se habla de #[b géneros en el medio audiovisual], generalmente se hace referencia a la ficción, el publicitario, el docudrama, el informativo y el de entretenimiento.
       .row.align-items-center.mb-5
         .col-xl
@@ -100,7 +100,7 @@
               .row.h-100.justify-content-center.align-items-center
                 .col-xl-6.mb-4
                   h4 Género de entretenimiento
-                  p.mb-0 Se relaciona con la competición, la exhibición y el humor. Adopta formatos como concursos de azar (#[i quiz shows] o #[i game shows]), #[i sketches], comedia en vivo o #[i stand-up] comedy, videos caseros en plataformas como Kwai o #[i TikTok], y la transmisión en directo de acontecimientos por medios tradicionales o digitales.
+                  p.mb-0 Se relaciona con la competición, la exhibición y el humor. Adopta formatos como concursos de azar (#[i quiz shows] o #[i game shows]), #[i sketches], comedia en vivo o #[i stand-up] comedy, videos caseros en plataformas como Kwai o TikTok, y la transmisión en directo de acontecimientos por medios tradicionales o digitales.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/img96.png', alt='' style="max-width: 500px").m-auto
@@ -136,7 +136,7 @@
                     .col-8
                       img(src='@/assets/curso/temas/img99.svg' style="max-width: 90px").m-auto
                   h4.mb-3.estilo-text #[i Slides]
-                  p.mb-0 Útiles para presentaciones en eventos, en #[i Slideshare] o en #[i webinars].
+                  p.mb-0 Útiles para presentaciones en eventos, en SlideShare o en #[i webinars].
                 .tarjeta.color-acento-botones.p-4
                   .row.justify-content-center.mb-3
                     .col-8
@@ -175,13 +175,42 @@ export default {
   data: () => ({
     // variables de vue
   }),
+  watch: {
+    // Escucha el cambio de sección desde el menú lateral
+    '$route.hash'() {
+      this.scrollToElement()
+    },
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
+    this.scrollToElement()
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    scrollToElement() {
+      this.$nextTick(() => {
+        this.$aosRefresh()
+        // 500ms da tiempo suficiente a que la animación de cierre del menú lateral
+        // termine y libere el ancho/alto real del contenedor
+        setTimeout(() => {
+          const hash = this.$route.hash || window.location.hash
+          if (!hash) return
+          const element = document.querySelector(hash)
+          if (element) {
+            // Altura de la barra superior fija del SENA
+            const headerOffset = 100
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            })
+          }
+        }, 500)
+      })
+    },
   },
 }
 </script>

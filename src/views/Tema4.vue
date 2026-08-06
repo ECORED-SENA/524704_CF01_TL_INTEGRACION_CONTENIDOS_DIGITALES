@@ -18,8 +18,8 @@
           .col-xl-auto
             figure(data-aos="fade-right").d-none.d-xl-block
               img(src="@/assets/curso/temas/img101.png", alt="" ).m-auto
-          .col-xl
-            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")(data-aos="fade-left")
+          .col-xl(data-aos="fade-left")
+            AcordionA(tipo="a" clase-tarjeta="tarjeta acordeonA")
               .row(titulo="Guion cinematográfico").ajuste-cajaAcordion
                 p.mb-3 Dependiendo del ámbito de trabajo, también se denomina #[i screenplay, script] o #[i teleplay]. Expresa en palabras cómo será el producto audiovisual resultante y, debido a su importancia, debe ser muy detallado. Una vez finalizado, sirve para negociar las decisiones cuando existen diferencias entre las partes involucradas en la producción.
               .row(titulo="Guion literario").ajuste-cajaAcordion
@@ -74,13 +74,42 @@ export default {
   data: () => ({
     // variables de vue
   }),
+  watch: {
+    // Escucha el cambio de sección desde el menú lateral
+    '$route.hash'() {
+      this.scrollToElement()
+    },
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
+    this.scrollToElement()
   },
   updated() {
     this.$aosRefresh()
+  },
+  methods: {
+    scrollToElement() {
+      this.$nextTick(() => {
+        this.$aosRefresh()
+        // 500ms da tiempo suficiente a que la animación de cierre del menú lateral
+        // termine y libere el ancho/alto real del contenedor
+        setTimeout(() => {
+          const hash = this.$route.hash || window.location.hash
+          if (!hash) return
+          const element = document.querySelector(hash)
+          if (element) {
+            // Altura de la barra superior fija del SENA
+            const headerOffset = 100
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            })
+          }
+        }, 500)
+      })
+    },
   },
 }
 </script>

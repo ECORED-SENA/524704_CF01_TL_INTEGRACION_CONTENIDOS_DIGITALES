@@ -245,7 +245,7 @@ export default {
         },
         {
           id: 8,
-          texto: '¿Qué es un mockup en diseño web?',
+          texto: '¿Qué es un <i>mockup</i> en diseño web?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
