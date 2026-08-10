@@ -40,19 +40,16 @@ export default {
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '1.1',
             titulo: 'Diseño gráfico',
             hash: 't_1_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.2',
             titulo: 'Fundamentos del diseño',
             hash: 't_1_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.3',
             titulo: 'Elementos del diseño gráfico',
             hash: 't_1_3',
@@ -66,25 +63,21 @@ export default {
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '2.1',
             titulo: 'El diseño web',
             hash: 't_2_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.2',
             titulo: 'Principios del diseño web',
             hash: 't_2_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.3',
             titulo: 'Enfoques de la usabilidad',
             hash: 't_2_3',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.4',
             titulo: 'Arquitectura web',
             hash: 't_2_4',
@@ -96,14 +89,6 @@ export default {
         numero: '3',
         titulo: 'Lenguaje audiovisual',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.1',
-            titulo: '<i>Storyboard</i> o guion gráfico',
-            hash: 't_3_1',
-          },
-        ],
       },
       {
         nombreRuta: 'tema4',
@@ -112,7 +97,6 @@ export default {
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '4.1',
             titulo: '<i>Storyboard</i> o guion gráfico',
             hash: 't_4_1',
@@ -122,23 +106,20 @@ export default {
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Estrategia digital',
+        titulo: 'Dirección de arte',
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '5.1',
             titulo: 'Estrategia digital',
             hash: 't_5_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '5.2',
             titulo: '<i>Marketing</i> digital',
             hash: 't_5_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '5.3',
             titulo: 'Plan de medios digitales',
             hash: 't_5_3',

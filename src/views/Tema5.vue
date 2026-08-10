@@ -51,7 +51,7 @@
         .col-xl
           .style___box_3.fit___box_3_3.mb-3(data-aos="zoom-in")
             p.mb-0 De esta manera, las organizaciones logran una segmentación tan precisa de sus mercados que llegan a identificar los medios sociales utilizados en cada país. Los profesionales del #[i marketing] digital consideran que, si un producto o servicio no se encuentra en Internet, simplemente no existe.
-          p.mb-0 Las redes sociales como TikTok, Kwai, Facebook, Twitter, LinkedIn e Instagram constituyen nuevas formas de llegar al cliente. Aunque muchas personas consideran que estos son los principales medios para comercializar productos o servicios, también resulta necesario contar con un #[b sitio web] y con el apoyo del #[b #[i e-mail marketing]].
+          p.mb-0 Las redes sociales como TikTok, Kwai, Facebook, X, LinkedIn e Instagram constituyen nuevas formas de llegar al cliente. Aunque muchas personas consideran que estos son los principales medios para comercializar productos o servicios, también resulta necesario contar con un #[b sitio web] y con el apoyo del #[b #[i e-mail marketing]].
         .col-xl-auto(data-aos="fade-left")
           figure.d-none.d-xl-block
             img(src='@/assets/curso/temas/img111.png', alt='').m-auto
